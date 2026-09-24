@@ -1,204 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jojo Noyes | Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jojo Noyes | Story, Systems & Games</title>
+  <meta name="description" content="Jojo Noyes is a game designer, developer, writer, studio leader, and founder of RainFall." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#sidebar">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar Navigation -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-                <div class="position-sticky pt-5">
-                    <div class="sidebar-logo text-center mb-5">
-                        <h2>Jojo Noyes</h2>
-                    </div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <!-- About Section -->
-                <section id="about" class="section-padding">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 mb-4">Jojo Noyes</h1> <!-- Changed to <h1> -->
-                            <p class="lead mb-4">Welcome to my portfolio! I am a Game Designer, Developer, and Story Writer. This website showcases my skills, projects, and how to contact me.</p> <!-- Added brief intro -->
-                            <button class="btn btn-primary btn-lg">
-                                <a href="Joseph_Noyes_Resume (1) - Copy.pdf" download style="color: white; text-decoration: none;">Download Resume</a>
-                            </button>
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            <img src="Jojo.jpg" alt="Profile Image" class="img-fluid rounded-circle profile-img"> <!-- Image already present -->
-                        </div>
-                    </div>
-                </section>
-                <hr> <!-- Added horizontal rule -->
-
-                <!-- Skills Section -->
-                <section id="skills" class="section-padding bg-alt">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="section-title mb-5">My Skills</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="skill-card p-4">
-                                <div class="skill-icon mb-3">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h3>Game Development</h3>
-                                <ul class="skill-list">
-                                    <li>Unreal Engine 5, blueprints, and C++.</li>
-                                    <li>Unity and C#.</li>
-                                    <li>Blender and Maya 3D software.</li>
-                                    <li>Game writing, storytelling, quest writer, and story design.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="skill-card p-4">
-                                <div class="skill-icon mb-3">
-                                    <i class="fas fa-server"></i>
-                                </div>
-                                <h3>Web Development</h3>
-                                <ul class="skill-list">
-                                    <li>HTML, CSS, JavaScript.</li>
-                                    <li>D3.</li>
-                                    <li>react.js.</li>
-                                    <li>MySQL.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="skill-card p-4">
-                                <div class="skill-icon mb-3">
-                                    <i class="fas fa-paint-brush"></i>
-                                </div>
-                                <h3>Design & Other</h3>
-                                <ul class="skill-list">
-                                    <li>Adobe Suite.</li>
-                                    <li>Cake Walk.</li>
-                                    <li>Arduino Programming.</li>
-                                    <li>PC Hardware.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr> <!-- Added horizontal rule -->
-
-                <!-- Projects Section -->
-                <section id="projects" class="section-padding">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="section-title mb-5"><i class="fas fa-project-diagram"></i> My Projects</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Videos -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/xebSsUXjtmE" 
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                </iframe>
-                                <h3 class="mt-3 text-center"><i class="fas fa-video"></i> The Bi-Directional Flow of Time</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/q4W_JWGr3F8" 
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                </iframe>
-                                <h3 class="mt-3 text-center"><i class="fas fa-video"></i> SSBAR</h3>
-                            </div>
-                        </div>
-
-                        <!-- Placeholder for Short Story -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <h3 class="text-center">Yumi - A Short Story</h3>
-                                <p class="text-center text-danger" style="font-size: 0.9rem;">
-                                    <strong>Content Warnings:</strong> death, grief, mentions and implied acts of sexual assault, kidnapping, child exploitation, blood, dystopian themes, murder, mental health, heavy violence.
-                                </p>
-                                <p class="text-center">A captivating short story written by me. Click the button below to view the PDF and explore the narrative.</p>
-                                <div class="text-center">
-                                    <a href="short-story.pdf" class="btn btn-outline-light" download>See Short Story</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Placeholder for Yocrestif -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <h3 class="text-center">Yocrestif</h3>
-                                <p class="text-center">A game project with a focus on world-building and story. I started this project in the winter of 2023 and have been world-building around it for over a year now. It has rich culture, history, science, and more to it. I would love to turn it into a game one day, as I have a lot of the story written and lore built, but it would be a very expensive production to take it to the level I would like. However, I have built a database around the details of this project.</p>
-                            </div>
-                        </div>
-
-                        <!-- Placeholder for Spark -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <h3 class="text-center">Spark (WIP)</h3>
-                                <p class="text-center">A work-in-progress project exploring innovative mechanics and design around melee games. This project, made in Unreal Engine, is based on multiple hero shooters and first-person melee combat games to combine the best elements into a unique player experience.</p>
-                            </div>
-                        </div>
-
-                        <!-- Placeholder for Rainfall Studios -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <h3 class="text-center">Rainfall Studios</h3>
-                                <p class="text-center">This is currently a two-person game studio owned and operated by me and my friend Boon Burns. This is the studio that is working on Spark and is currently working to gain funding.</p>
-                            </div>
-                        </div>
-
-                        <!-- Planet Image -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="project-card">
-                                <h3 class="mt-3 text-center">Made in Blender</h3>
-                                <img src="planet.png" alt="Planet" class="img-fluid rounded">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr> <!-- Added horizontal rule -->
-
-                <!-- Footer -->
-                <footer class="py-4 text-center">
-                    <p class="mb-0">
-                        <i class="fas fa-envelope"></i> Email: <a href="mailto:jojonoyes@u.boisestate.edu">jojonoyes@u.boisestate.edu</a><br>
-                        <i class="fas fa-phone"></i> Phone: <a href="tel:+12085412620">(208) 541-2620</a><br>
-                        <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/jojo-noyes-a95190347/" target="_blank">Jojo Noyes</a>
-                    </p>
-                </footer>
-            </main>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="/script.js" async></script>
+<body id="top">
+  <canvas id="starfield" aria-hidden="true"></canvas><div class="atmos" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
+  <header class="hdr" id="hdr"><div class="wrap hdr-in"><a class="brand" href="#top"><span class="brand-mark">✦</span><span>Jojo Noyes</span></a><nav class="nav" aria-label="Primary"><a href="#about">About</a><a href="#worlds">Worlds</a><a href="#leadership">Leadership</a><a href="#rainfall">RainFall</a><a href="#media">Media</a><a href="#contact">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="hero"><div class="hero-orbit" aria-hidden="true"><img src="Media%20Folder/planet.png" alt="" /></div><div class="wrap hero-in"><p class="eyebrow reveal">Portfolio · 2026</p><h1 class="hero-name reveal" data-d="1">Jojo<br />Noyes</h1><p class="hero-line reveal" data-d="2">I build worlds that feel lived in, systems that invite play, and stories that stay with you after the screen goes dark.</p><div class="hero-cta reveal" data-d="3"><a class="btn btn-solid" href="#worlds">Explore the work</a><a class="btn" href="#contact">Start a conversation</a></div><ul class="triad reveal" data-d="4"><li><span>01</span><h3>Worldbuilding</h3><p>Histories, cultures, systems, and the details that make a universe hold together.</p></li><li><span>02</span><h3>Game Design</h3><p>Playable ideas shaped into mechanics, encounters, and experiences with a point of view.</p></li><li><span>03</span><h3>Technical Craft</h3><p>Code, tools, content pipelines, and the implementation that makes an idea playable.</p></li></ul></div></section>
+    <section class="section" id="about"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">01</span><h2 class="sec-title">A practice built around possibility.</h2><p class="sec-lede">Game designer, developer, story writer, and creative builder working between the page and the playable world.</p></header><div class="split"><div class="portrait portrait-mark reveal"><img src="Media%20Folder/Jojo.jpg" alt="Jojo Noyes in a forest" /></div><div class="prose reveal" data-d="1"><p>I am interested in the moment an idea becomes a place someone else can enter. My work moves between narrative design, game systems, worldbuilding, software, and visual experimentation.</p><p>Some projects are games in active development. Others are lore archives, client work, short fiction, music, visual studies, or community-centered preservation work. Together they form one practice: making specific worlds and finding the right way for people to experience them.</p><ul class="facts"><li><span>Focus</span>Game design · narrative · technical development</li><li><span>Studio</span>RainFall · nine-person team</li><li><span>Languages</span>HLSL · C++ · C# · JavaScript · HTML · CSS</li><li><span>Engines</span>Unity · Unreal Engine 5</li><li><span>Cloud</span>Oracle Cloud · AWS</li><li><span>Servers</span>Web servers · backend servers · PostgreSQL · MySQL</li><li><span>Open to</span>Collaboration · creative opportunities</li></ul></div></div></div></section>
+    <section class="section section-tint" id="worlds"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">02</span><h2 class="sec-title">Worlds and projects in progress</h2><p class="sec-lede">A collection of settings, systems, client work, stories, and community projects at different points in their becoming.</p></header><div class="cols-2"><article class="card reveal"><p class="tag">Worldbuilding · Systems</p><h3>Yocrestif</h3><p>A large-scale universe built from deep history, cultures, science, politics, and mythology. Yocrestif is an ongoing worldbuilding practice as much as it is a game project.</p><ul class="meta"><li>World archive</li><li>Original music</li></ul></article><article class="card reveal" data-d="1"><p class="tag">Short fiction · Cyberpunk</p><h3>Yumi</h3><p>A neon-soaked dystopian story about loss, resilience, and the human cost of technological progress in a city ruled by corporate power.</p><ul class="meta"><li>Short story</li><li>PDF available</li></ul><a class="text-link" href="Media%20Folder/Yumi%20(1).pdf" target="_blank">Read the project <span>↗</span></a></article><article class="card reveal" data-d="2"><p class="tag">Sci-fi · Narrative design</p><h3>Zephyrus</h3><p>A megacity shaped by corporate control, underground resistance, and the moral pressure of living inside a system built to outlast its people.</p><ul class="meta"><li>Social systems</li><li>Urban design</li></ul></article><article class="card reveal" data-d="3"><p class="tag">Combat · Systems design</p><h3>Elemental Harmony</h3><p>An elemental combat framework where Fire, Water, Thunder, and Earth each carry their own philosophy, rhythm, and tactical identity.</p><ul class="meta"><li>Combat design</li><li>Ability systems</li></ul></article><article class="card reveal" data-d="4"><p class="tag">Client project · Idaho Gaming Conference</p><h3>Parallax</h3><p>A client project for the Idaho Gaming Conference. I am the project lead, guiding the work from concept through design, coordination, and delivery.</p><ul class="meta"><li>Project lead</li><li>Client work</li></ul></article><article class="card reveal" data-d="5"><p class="tag">Game development · Senior capstone</p><h3>Ghibli Game</h3><p>A four-person Boise State GIMM capstone directed by Jojo Noyes, with Boon Burns leading programming, Trey Bledsoe leading music and reactive audio, and Lily Pinson leading art and design. Inspired by Studio Ghibli, especially <em>Spirited Away</em>, the game follows a traveler arriving at a magical hotel and exploring its city, ponds, and bathhouse-like world through chores, puzzles, quests, memories, and character stories.</p><p>The team is committed to handcrafted art, audio, visuals, and story, with only limited AI-assisted code and no generative AI for player-facing content. The technical vision includes Unity URP toon shaders, low-poly painterly assets, Wwise integration, reactive motifs, streamed hotel zones, time-of-day schedules, cinematic cameras, branching dialogue, NPC behaviors, data-driven quests, inventory, accessibility, saves, and world-flag achievements.</p><ul class="meta"><li>Direction &amp; story</li><li>Unity · Wwise</li><li>Handcrafted content</li></ul><a class="text-link" href="Media%20Folder/Ghibli.pdf" target="_blank">Open the full document <span>↗</span></a></article><article class="card reveal" data-d="6"><p class="tag">Community · Language preservation</p><h3>Duck Valley Language Preservation</h3><p>A preservation project supporting the continued teaching and documentation of Western Shoshoni and Northern Paiute languages for the Duck Valley Reservation community.</p><ul class="meta"><li>Western Shoshoni</li><li>Northern Paiute</li></ul></article><article class="card reveal" data-d="7"><p class="tag">Backend · Web project</p><h3>FoxTooth Backend</h3><p>A backend-focused project demonstrating database and web development work, including PostgreSQL, MySQL, and the broader stack behind the service.</p><ul class="meta"><li>PostgreSQL</li><li>MySQL</li><li>Web development</li></ul><a class="text-link" href="https://jojozune.github.io/FoxTooth-Backend/" target="_blank" rel="noopener">Visit FoxTooth <span>↗</span></a></article></div><blockquote class="quote reveal">“It’s the people no one imagines anything of that do the things no one can imagine.”<cite>— Alan Turing</cite></blockquote></div></section>
+    <section class="section" id="leadership"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">03</span><h2 class="sec-title">Leadership, on campus and in production.</h2><p class="sec-lede">I like building the conditions where ambitious ideas can become shared, playable work.</p></header><div class="cols-2"><article class="card reveal"><p class="tag">Boise State University</p><h3>Game Development &amp; Design Club</h3><p>I am the leader and president of Boise State’s game development and design club. I have served as president for two years, organizing a space for students to learn, collaborate, prototype, and share work.</p><ul class="meta"><li>President · 2 years</li><li>Community leadership</li></ul></article><article class="card reveal" data-d="1"><p class="tag">RainFall</p><h3>Studio leadership</h3><p>As part of RainFall’s leadership, I help guide a nine-person studio working across branding and game development, including the game Parks and Rec.</p><ul class="meta"><li>Team direction</li><li>Creative strategy</li></ul><a class="text-link" href="https://rainfall-studio.com/" target="_blank" rel="noopener">Visit RainFall <span>↗</span></a></article></div></div></section>
+    <section class="section" id="rainfall"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">RainFall</h2><p class="sec-lede">A nine-person studio turning strong ideas into thoughtful branding and games.</p></header><div class="studio-feature reveal"><div class="studio-image"><img src="Media%20Folder/RainfallLogo.png" alt="RainFall studio logo" /></div><div class="studio-copy"><p class="tag">Founder · Nine-person studio</p><h3>Small team. Big creativity.</h3><p>RainFall is a nine-person studio built around creative collaboration, clear identity, and game development. The studio is currently developing <strong>Parks and Rec</strong>, a game represented by the Parks and Rec logo in this portfolio’s media archive.</p><div class="hero-cta"><a class="btn btn-solid" href="Media%20Folder/IMG_0626.png" target="_blank">View Parks and Rec logo</a><a class="btn" href="https://rainfall-studio.com/" target="_blank" rel="noopener">Visit RainFall ↗</a><a class="btn" href="mailto:rainfalldevs@gmail.com">Email the studio</a></div></div></div></div></section>
+    <section class="section section-tint" id="media"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">05</span><h2 class="sec-title">The media room</h2><p class="sec-lede">The supporting work behind the worlds: demos, motion, music, visual studies, logos, and documents, all served from the Media Folder.</p></header><div class="media-grid"><article class="media-card media-card-wide reveal"><div class="media-video"><video controls preload="metadata"><source src="Media%20Folder/Noyes.mp4" type="video/mp4" /></video></div><div class="media-card-body"><p class="tag">Video · Presentation</p><h3>Noyes</h3><p>A moving piece from the portfolio archive.</p></div></article><article class="media-card reveal" data-d="1"><img src="Media%20Folder/IMG_0626.png" alt="Parks and Rec logo" /><div class="media-card-body"><p class="tag">RainFall · Game development</p><h3>Parks and Rec</h3><p>The current RainFall game project.</p></div></article><article class="media-card reveal" data-d="2"><img src="Media%20Folder/planet.png" alt="Gold planet visualization" /><div class="media-card-body"><p class="tag">3D · Blender</p><h3>Planet visualization</h3><p>A study in atmosphere, material, and scale.</p></div></article><article class="media-card reveal" data-d="3"><div class="media-video"><video controls preload="metadata"><source src="Media%20Folder/GamePlayDemo.mp4" type="video/mp4" /></video></div><div class="media-card-body"><p class="tag">Video · Game development</p><h3>Gameplay demo</h3><p>Early motion and interaction from active development.</p></div></article></div><div class="media-lower"><div class="audio-room reveal"><p class="tag">Soundtrack · Yocrestif</p><h3>Original compositions</h3><p>Atmosphere for the worlds in progress, composed with IAmLuminant and Jojo Noyes.</p><audio controls preload="metadata"><source src="Media%20Folder/Plernat2.mp3" type="audio/mpeg" /></audio><audio controls preload="metadata"><source src="Media%20Folder/Judgement%20Day.mp3" type="audio/mpeg" /></audio></div><div class="download-room reveal" data-d="1"><p class="tag">Archive</p><h3>Read and download</h3><a class="download-link" href="Media%20Folder/short-story.pdf" target="_blank">Yumi · short story <span>PDF ↗</span></a><a class="download-link" href="Media%20Folder/Ghibli.pdf" target="_blank">Ghibli-inspired game <span>PDF ↗</span></a><a class="download-link" href="Media%20Folder/Copy%20of%20Tidal%20Hunters.pptx" download>Tidal Hunters <span>PPTX ↓</span></a><a class="download-link" href="Media%20Folder/Joseph_Noyes_Resume%20(1)%20-%20Copy.pdf" target="_blank">Resume <span>PDF ↗</span></a></div></div></div></section>
+    <section class="section" id="more"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">06</span><h2 class="sec-title">More worlds to come</h2><p class="sec-lede">A few open shelves for the next ideas, prototypes, and collaborations.</p></header><div class="cols-3"><article class="card note-card reveal"><span class="note-number">A</span><p class="tag">Open slot</p><h3>Next project</h3><p>A place for the next game or prototype to take shape.</p></article><article class="card note-card reveal" data-d="1"><span class="note-number">B</span><p class="tag">Open slot</p><h3>Collaborations</h3><p>Room for a team, a shared world, or a particularly good question.</p></article><article class="card note-card reveal" data-d="2"><span class="note-number">C</span><p class="tag">Open slot</p><h3>Research &amp; notes</h3><p>Experiments, design studies, and the things that become projects later.</p></article></div></div></section>
+    <section class="section section--contact" id="contact"><div class="wrap"><header class="sec-head reveal"><span class="sec-num">07</span><h2 class="sec-title">Let’s make something creative.</h2><p class="sec-lede">For conversations about game design, narrative, RainFall, leadership, language preservation, or a project that needs a world around it.</p></header><div class="contact reveal" data-d="1"><a class="mail" href="mailto:jojonoyes@u.boisestate.edu">jojonoyes@u.boisestate.edu</a><ul class="links"><li><a href="https://rainfall-studio.com/" target="_blank" rel="noopener">RainFall ↗</a></li><li><a href="mailto:rainfalldevs@gmail.com">rainfalldevs@gmail.com</a></li><li><a href="https://jojozune.github.io/FoxTooth-Backend/" target="_blank" rel="noopener">FoxTooth Backend ↗</a></li><li><a href="https://jojonoyes.github.io" target="_blank" rel="noopener">Website ↗</a></li><li><a href="Media%20Folder/Joseph_Noyes_Resume%20(1)%20-%20Copy.pdf" target="_blank">Résumé ↗</a></li></ul></div></div></section>
+  </main>
+  <footer class="ftr"><div class="wrap ftr-in"><p class="ftr-mark">Jojo Noyes · RainFall</p><p class="ftr-note">Worlds, systems, signal.</p><p class="ftr-year">© <span id="year">2026</span></p></div></footer>
 </body>
 </html>
