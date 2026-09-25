@@ -111,6 +111,10 @@
   const currentProjects = ['Parallax', 'FoxTooth Backend', 'Duck Valley Language Preservation', 'Ghibli Game'];
   const worldbuildingProjects = ['Yocrestif', 'Yumi', 'Zephyrus', 'Jackal'];
   const backendProjects = [];
+  const duckValleyCard = Array.from(document.querySelectorAll('#worlds .card')).find((card) => card.querySelector('h3')?.textContent.trim() === 'Duck Valley Language Preservation');
+  if (duckValleyCard && !duckValleyCard.querySelector('[data-project-image="shoshone-web"]')) {
+    duckValleyCard.insertAdjacentHTML('beforeend', '<a class="project-image-link" data-project-image="shoshone-web" href="Media%20Folder/ShoshoneWeb.png" target="_blank" rel="noopener"><img class="project-image" src="Media%20Folder/ShoshoneWeb.png" alt="Duck Valley language preservation website" /></a>');
+  }
   const sectionOrder = document.querySelector('main');
   const worldsSection = document.getElementById('worlds');
   const leadershipSection = document.getElementById('leadership');
@@ -199,6 +203,16 @@
         }
       }
     });
+    const writingStatuses = {
+      Yumi: '(Finished)',
+      Zephyrus: '(WIP)',
+      Jackal: '(WIP)',
+      Yocrestif: '(WIP)'
+    };
+    worldbuildingSection.querySelectorAll('.card h3').forEach((titleElement) => {
+      const status = writingStatuses[titleElement.textContent.trim()];
+      if (status) titleElement.textContent += ` ${status}`;
+    });
     backendProjects.forEach((title) => {
       const card = projectCardByTitle.get(title);
       if (card) backendSection.querySelector('.cols-2').append(card);
@@ -208,7 +222,7 @@
     worldbuildingSection.querySelector('.cols-2').insertAdjacentHTML('beforeend', `
       <article class="card reveal" data-project="tidal-hunters-writing">
         <p class="tag">Tidal Hunters · Worldbuilding and writing</p>
-        <h3>Tidal Hunters: World Building</h3>
+        <h3>Tidal Hunters: World Building (WIP)</h3>
         <p>The setting, factions, hunter culture, fifth-dimensional beasts, Nazeda, and the systems of a world built to support the game’s multiplayer experience.</p>
         <ul class="meta"><li>Worldbuilding</li><li>Writing</li><li>Project document</li></ul>
         <a class="text-link" href="Media%20Folder/TidalHuntersLoreBible(incomplete).pdf" download>Download Tidal Hunters Lore Bible (Incomplete) <span>↓</span></a>
@@ -300,6 +314,13 @@
         <div class="media-grid"><article class="media-card reveal"><img src="Media%20Folder/planet.png" alt="Gold planet visualization" /><div class="media-card-body"><p class="tag">3D · Blender</p><h3>Planet visualization</h3></div></article><article class="media-card reveal"><img src="Media%20Folder/IMG_0626.png" alt="Parks and Rec logo" /><div class="media-card-body"><p class="tag">RainFall · Parks and Rec</p><h3>Parks and Rec logo</h3></div></article><article class="media-card reveal"><img src="Media%20Folder/RainfallLogo.jpg" alt="RainFall studio logo" /><div class="media-card-body"><p class="tag">Studio identity</p><h3>RainFall logo</h3></div></article></div>
         <div class="media-lower"><div class="audio-room reveal"><p class="tag">Soundtrack · Yocrestif</p><h3>Original compositions</h3><audio controls preload="metadata"><source src="Media%20Folder/Plernat2.mp3" type="audio/mpeg" /></audio><audio controls preload="metadata"><source src="Media%20Folder/Judgement%20Day.mp3" type="audio/mpeg" /></audio></div><div class="download-room reveal"><p class="tag">Project document</p><h3>Tidal Hunters writing archive</h3><p>Keep the full project document available here for download.</p><a class="download-link" href="Media%20Folder/Copy%20of%20Tidal%20Hunters.pptx" download><span>Tidal Hunters document</span><span>PPTX ↓</span></a></div></div>
       </div>`;
+    mediaWrap.querySelectorAll('.media-lower').forEach((lowerSection) => {
+      const downloadRoom = lowerSection.querySelector('.download-room');
+      if (downloadRoom?.textContent.includes('Tidal Hunters writing archive')) {
+        downloadRoom.remove();
+        lowerSection.classList.add('media-lower-single');
+      }
+    });
     mediaWrap.querySelectorAll('.media-subsection').forEach((subsection) => {
       if (subsection.querySelector('.tag')?.textContent.includes('Tidal Hunters')) subsection.remove();
     });
